@@ -1,4 +1,3 @@
-// ===== FUNÇÃO DO MENU HAMBÚRGUER =====
 const menuHamburguer = document.getElementById('menuHamburguer');
 const navbar = document.getElementById('navbar');
 
@@ -6,15 +5,12 @@ menuHamburguer.addEventListener('click', () => {
     navbar.classList.toggle('ativo');
 });
 
-// Fechar menu ao clicar em um link
 document.querySelectorAll('.navbar a').forEach(link => {
     link.addEventListener('click', () => {
         navbar.classList.remove('ativo');
     });
 });
 
-
-// ===== MODAL DE IMAGEM =====
 function abrirImagem(){
     let imagem = document.getElementById("imagemProjeto").src;
     document.getElementById("imagemGrande").src = imagem;
