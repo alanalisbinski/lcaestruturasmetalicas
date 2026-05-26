@@ -1,3 +1,5 @@
+CSS
+
 body {
   background-color: #C3D1EB;
   margin: 0;
@@ -16,7 +18,6 @@ header {
   justify-content: center;
   padding: 10px 40px;
   color: none;
-  position: relative;
 }
 
 .navbar {
@@ -332,91 +333,4 @@ button:hover {
 
 .modal-content h3 {
     display: block;
-}
-
-.menu-hamburguer {
-    display: none;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
-}
-
-.menu-hamburguer span {
-    width: 30px;
-    height: 3px;
-    background-color: #213A5C;
-}
-
-@media (max-width: 768px) {
-
-    .menu-hamburguer {
-        display: flex;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #C3D1EB;
-        display: none;
-        padding: 20px 0;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .navbar.ativo {
-        display: block;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    header {
-        justify-content: space-between;
-        padding: 10px 20px;
-    }
-
-    .logotipo img {
-        margin-right: 0;
-    }
-
-    .welcome-section {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .welcome-content {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .welcome-content h2 {
-        white-space: normal;
-        font-size: 26px;
-    }
-
-    .skills {
-        display: block;
-        width: auto;
-        margin: 30px auto;
-        padding: 0 20px;
-    }
-
-    .services-sections {
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px;
-    }
-
-    .our-services {
-        padding: 0 20px;
-    }
-
-    .hero {
-        height: 300px;
-    }
 }

@@ -1,20 +1,17 @@
-// ===== FUNÇÃO DO MENU HAMBÚRGUER (SÓ ADICIONEI ISSO) =====
-const menuHamburguer = document.getElementById('menuHamburguer');
-const navbar = document.getElementById('navbar');
-
-menuHamburguer.addEventListener('click', () => {
-    navbar.classList.toggle('ativo');
-});
-
-// ===== SEU CÓDIGO ORIGINAL (TUDO IGUAL) =====
 function abrirImagem(){
+
 let imagem = document.getElementById("imagemProjeto").src;
+
 document.getElementById("imagemGrande").src = imagem;
+
 document.getElementById("imagemModal").style.display = "flex";
+
 }
 
 function fecharImagem(){
+
 document.getElementById("imagemModal").style.display = "none";
+
 }
 
 document.getElementById('btnMais').addEventListener('click', function() {
@@ -42,7 +39,6 @@ document.getElementById('btnMais3').addEventListener('click', function() {
 document.getElementById('btnFechar3').addEventListener('click', function() {
     document.getElementById('caixaTexto3').style.display = 'none';
 });
-
 
 document.getElementById('btnMais4').addEventListener('click', function() {
     document.getElementById('caixaTexto4').style.display = 'block';
