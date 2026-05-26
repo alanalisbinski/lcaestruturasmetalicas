@@ -21,8 +21,6 @@ function fecharImagem(){
     document.getElementById("imagemModal").style.display = "none";
 }
 
-
-// ===== MODAIS DOS SERVIÇOS =====
 document.getElementById('btnMais').addEventListener('click', function() {
     document.getElementById('caixaTexto').style.display = 'block';
 });
