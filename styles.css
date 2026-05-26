@@ -406,7 +406,6 @@ button:hover {
         padding: 0 20px;
     }
 
-    /* Ajusta a seção de ícones */
     .services-sections {
         flex-direction: column;
         gap: 30px;
@@ -415,5 +414,9 @@ button:hover {
 
     .our-services {
         padding: 0 20px;
+    }
+
+    .hero {
+        height: 300px;
     }
 }

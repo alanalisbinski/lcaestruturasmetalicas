@@ -1,3 +1,4 @@
+// ===== FUNÇÃO DO MENU HAMBÚRGUER (SÓ ADICIONEI ISSO) =====
 const menuHamburguer = document.getElementById('menuHamburguer');
 const navbar = document.getElementById('navbar');
 
@@ -5,6 +6,7 @@ menuHamburguer.addEventListener('click', () => {
     navbar.classList.toggle('ativo');
 });
 
+// ===== SEU CÓDIGO ORIGINAL (TUDO IGUAL) =====
 function abrirImagem(){
 let imagem = document.getElementById("imagemProjeto").src;
 document.getElementById("imagemGrande").src = imagem;
