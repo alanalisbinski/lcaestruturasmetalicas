@@ -27,5 +27,3 @@ Seção explicatória dos serviços.
 Responsivo para celulares e tablets
 
 Autor
-
-Alana Cristina – Link para o portfólio(https://alanalisbinski.github.io/portfolio-alanacristina/)
