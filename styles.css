@@ -206,6 +206,13 @@ button:hover {
   border-radius: 8px;
 }
 
+.projeto2 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .our-projects {
   padding: 40px 0;
   display: flex;
