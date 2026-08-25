@@ -305,8 +305,11 @@ button:hover {
   height:100%;
   background:rgba(0,0,0,0.8);
   justify-content:center;
-  display: flex;
   align-items:center;
+}
+
+.imagem-modal:ativo {
+   display: flex;
 }
 
 .imagem-modal img{
