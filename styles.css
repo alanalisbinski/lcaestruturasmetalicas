@@ -72,15 +72,13 @@ header {
   margin: 0;
 }
 
+/* ✅ SERVIÇOS: Título acima, cards lado a lado abaixo */
 #services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
-#services {
+/* ✅ Contêiner SOMENTE dos 4 cards → lado a lado */
+.skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
@@ -96,6 +94,7 @@ header {
   font-family: Arial, sans-serif;
 }
 
+/* ✅ Círculo centralizado */
 .circle {
   width: 65px;
   height: 65px;
@@ -111,6 +110,7 @@ header {
   box-sizing: border-box;
 }
 
+/* ✅ Título centralizado */
 .skills h3 {
   font-size: 17px;
   margin: 8px 0;
@@ -118,12 +118,13 @@ header {
   text-align: center;
 }
 
+/* ✅ Descrição à esquerda */
 .skills h6 {
   font-size: 13px;
   line-height: 1.5;
   margin: 0 0 12px 0;
   color: #333;
-  text-align: left; 
+  text-align: left;
 }
 
 .our-services {
@@ -144,6 +145,8 @@ button:hover {
   border-color: #1a2e4a;
   color: #fff;
 }
+
+/* ✅ Seção de Diferenciais (3 ícones) */
 .services-sections {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
   url('imagens/banner2.jpg');
@@ -158,56 +161,35 @@ button:hover {
   color: #213A5C;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-wrap: wrap;
 }
-.service-item {
-  flex: 1;
+.service-items {
+  flex: 1 1 250px;
   max-width: 350px;
   transition: transform 0.3s ease;
 }
-.service-item:hover {
+.service-items:hover {
   transform: translateY(-10px);
 }
-.service-item .icon {
+.service-items i {
   font-size: 60px;
   color: #213A5C;
   margin-bottom: 25px;
   display: block;
 }
-.service-item h3 {
-  font-size: 1.8rem;
+.service-items h3 {
+  font-size: 1.5rem;
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.service-item p {
+.service-items p {
   font-size: 1rem;
   line-height: 1.6;
   opacity: 0.85;
 }
-.services-header {
-  display: flex;
-  align-items: left;
-  gap: 15px;
-}
-.services-header h2 {
-  margin: 0;
-}
-.services-header h4 {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  font-weight: 400;
-}
-.projetos-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 20px;
-}
-.projects, .project-estruturas {
-  max-width: 260px;
-  text-align: left;
-  line-height: 1.4;
-}
+
+/* ✅ PROJETOS: Lado a lado e centralizados */
 .titulo-projetos {
   text-align: center;
   color: #213A5C;
@@ -218,27 +200,19 @@ button:hover {
 }
 .our-projects {
   padding: 40px 0;
+}
+.container-projects {
   display: flex;
   justify-content: center;
-  gap: 40px; 
+  gap: 40px;
   flex-wrap: wrap;
 }
-.projects {
+.projects, .project-estruturas {
+  flex: 0 0 260px;
   max-width: 260px;
   text-align: left;
   line-height: 1.4;
-}
-.project-estruturas {
-  max-width: 260px;
-  text-align: left;
-  line-height: 1.4;
-  margin: 40px;
-}
-.project-estruturas p {
-  max-width: 260px;
-  text-align: left;
-  line-height: 1.4;
-  margin: 9px 0;
+  margin: 0;
 }
 .projeto1,
 .projeto2 {
@@ -246,20 +220,20 @@ button:hover {
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+.projects h3, .project-estruturas h3 {
   text-align: center;
+  color: #213A5C;
 }
-.our-projects h2 {
-  color:#213A5C;
-  font-size: 30px;
-  justify-content: left;
-  font-family: josefin-sans;
-}
+
 .get-in-touch {
   background: #1a1a1a;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imagens/banner_tubos.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 60px 20px; 
+  padding: 60px 20px;
   text-align: center;
   color: #fff;
   width: 100%;
@@ -383,8 +357,7 @@ button:hover {
     white-space: normal;
     font-size: 26px;
   }
-
-  #services {
+  .skills-container {
     flex-direction: column;
     align-items: center;
     padding: 20px;
