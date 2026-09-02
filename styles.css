@@ -3,13 +3,11 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .logotipo img {
   width: 100px;
   height: 100px;
   margin-right: 190px;
 }
-
 header {
   display: flex;
   align-items: center;
@@ -18,11 +16,9 @@ header {
   color: none;
   position:relative;
 }
-
 .navbar {
-  font-family: poppins;
+  font-family: 'Rubik';
 }
-
 .navbar ul {
   list-style: none;
   display: flex;
@@ -30,13 +26,11 @@ header {
   padding: 0;
   margin: 0;
 }
-
 .navbar a {
   text-decoration: none;
   color: #213A5C;
   font-size: 18px;
 }
-
 .hero {
   width: 100%;
   height: 450px;
@@ -46,11 +40,9 @@ header {
   background-repeat: no-repeat;
   display: block;
 }
-
 .span {
   color: #444A54;
 }
-
 .welcome-section {
   display: flex;
   align-items: center;
@@ -59,13 +51,11 @@ header {
   width: calc(100% - 0px);
   box-sizing: border-box;
 }
-
 .welcome-content {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-
 .welcome-content h2 {
   font-size: 34px;
   font-weight: 700;
@@ -74,7 +64,6 @@ header {
   letter-spacing: 1px;
   white-space: nowrap;
 }
-
 .welcome-content p {
   font-size: 18px;
   line-height: 1.6;
@@ -83,60 +72,78 @@ header {
   margin: 0;
 }
 
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
+}
+
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
+}
+
 .skills {
-  text-align: center;
-  width: 200px;
+  flex: 1 1 220px;
+  max-width: 240px;
+  padding: 15px 10px;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
 .circle {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   background:#a5bbcc;
   border: 3px solid #a5bbcc;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 12px auto;
+  box-sizing: border-box;
 }
 
-.skills {
-  display: inline-block;
-  justify-content: center;
-  gap: 80px;
-  padding: 0 60px;
-}
-
-.circle {
+.skills h3 {
+  font-size: 17px;
+  margin: 8px 0;
+  color: #213A5C;
   text-align: center;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+}
+
+.skills h6 {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+  color: #333;
+  text-align: left; 
 }
 
 .our-services {
   padding: 0 60px;
 }
-
 button {
   background-color: #213A5C;
   color:#fff;
-  border: 2px, solid #213A5C;
-  padding: 8px;
+  border: 2px solid #213A5C;
+  padding: 7px 12px;
   font-size: 12px;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
 }
-
 button:hover {
-  background-color: #213A5C;
+  background-color: #1a2e4a;
+  border-color: #1a2e4a;
   color: #fff;
 }
-
 .services-sections {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
   url('imagens/banner2.jpg');
@@ -152,87 +159,87 @@ button:hover {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .service-item {
   flex: 1;
   max-width: 350px;
   transition: transform 0.3s ease;
 }
-
 .service-item:hover {
   transform: translateY(-10px);
 }
-
 .service-item .icon {
   font-size: 60px;
   color: #213A5C;
   margin-bottom: 25px;
   display: block;
 }
-
 .service-item h3 {
   font-size: 1.8rem;
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
 .service-item p {
   font-size: 1rem;
   line-height: 1.6;
   opacity: 0.85;
 }
-
 .services-header {
   display: flex;
   align-items: left;
   gap: 15px;
 }
-
 .services-header h2 {
   margin: 0;
 }
-
 .services-header h4 {
   margin: 0;
   font-family: Arial, sans-serif;
   font-weight: 400;
 }
-
-.project-estruturas {
+.projetos-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+.projects, .project-estruturas {
   max-width: 260px;
   text-align: left;
   line-height: 1.4;
-  margin: 0 20px;
 }
-
+.titulo-projetos {
+  text-align: center;
+  color: #213A5C;
+  font-size: 30px;
+  font-family: josefin-sans;
+  margin-bottom: 30px;
+  width: 100%;
+}
 .our-projects {
   padding: 40px 0;
   display: flex;
   justify-content: center;
   gap: 40px; 
+  flex-wrap: wrap;
 }
-
 .projects {
   max-width: 260px;
   text-align: left;
   line-height: 1.4;
 }
-
 .project-estruturas {
   max-width: 260px;
   text-align: left;
   line-height: 1.4;
-  margin: 90px 20px 0 20px;
+  margin: 40px;
 }
-
 .project-estruturas p {
   max-width: 260px;
   text-align: left;
   line-height: 1.4;
   margin: 9px 0;
 }
-
 .projeto1,
 .projeto2 {
   width: 150px;
@@ -241,14 +248,12 @@ button:hover {
   border-radius: 8px;
   text-align: center;
 }
-
 .our-projects h2 {
   color:#213A5C;
   font-size: 30px;
   justify-content: left;
   font-family: josefin-sans;
 }
-
 .get-in-touch {
   background: #1a1a1a;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imagens/banner_tubos.jpg");
@@ -260,14 +265,12 @@ button:hover {
   width: 100%;
   box-sizing: border-box;
 }
-
 .get-in-touch h2 {
   font-size: 28px;
   letter-spacing: 4px;
   margin-bottom: 20px;
   font-weight: 600;
 }
-
 .get-in-touch p {
   font-size: 14px;
   color: #fff;
@@ -275,14 +278,12 @@ button:hover {
   max-width: 600px;
   margin: 0 auto 35px auto;
 }
-
 .icons {
   display: flex;
   justify-content: center;
   gap: 23px;
   font-size: 20px;
 }
-
 .icons a {
   width: 38px;
   height: 38px;
@@ -294,25 +295,15 @@ button:hover {
   color: #fff;
   font-size: 15px;
   transition: 0.3s;
+  text-decoration: none;
 }
-
 .icons a:hover {
   background: #213A5C;
   color: #111;
 }
-
 .our-services h4 {
   text-align: left;
 }
-
-.navbar {
-  font-family: 'Rubik';
-}
-
-.icons a {
-  text-decoration: none;
-}
-
 .imagem-modal{
   display:none;
   position:fixed;
@@ -324,13 +315,11 @@ button:hover {
   justify-content:center;
   align-items:center;
 }
-
 .imagem-modal img{
   max-width:80%;
   max-height:80%;
   border-radius:10px;
 }
-
 .fecharImagem{
   position:absolute;
   top:30px;
@@ -339,92 +328,80 @@ button:hover {
   color:white;
   cursor:pointer;
 }
-
 .servico {
   position: relative;
   padding: 15px;
   display: inline-block;
   margin: 0 10px;
 }
-
 .modal-content h3 {
   display: block;
 }
-
 .imagem-modal.ativo {
   display: flex;
 }
 
 @media (max-width: 768px) {
+  .menu-hamburguer {
+    display: flex;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #C3D1EB;
+    display: none;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .navbar.ativo {
+    display: block;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  header {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .logotipo img {
+    margin-right: 0;
+  }
+  .welcome-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  .welcome-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .welcome-content h2 {
+    white-space: normal;
+    font-size: 26px;
+  }
 
-.menu-hamburguer {
-  display: flex;
-}
-
-.navbar {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #C3D1EB;
-  display: none;
-  padding: 20px 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.navbar.ativo {
-  display: block;
-}
-
-.navbar ul {
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-header {
-  justify-content: space-between;
-  padding: 10px 20px;
-}
-
-.logotipo img {
-  margin-right: 0;
-}
-
-.welcome-section {
-  flex-direction: column;
-  padding: 20px;
-  text-align: center;
-}
-
-.welcome-content {
-  flex-direction: column;
-  gap: 20px;
-}
-
-.welcome-content h2 {
-  white-space: normal;
-  font-size: 26px;
-}
-
-.skills {
-  display: block;
-  width: auto;
-  margin: 30px auto;
-  padding: 0 20px;
-}
-
-.services-sections {
-  flex-direction: column;
-  gap: 30px;
-  padding: 20px;
-}
-
-.our-services {
-  padding: 0 20px;
-}
-
-.hero {
-  height: 300px;
-}
+  #services {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .skills {
+    width: 100%;
+    max-width: 300px;
+  }
+  .services-sections {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  .our-services {
+    padding: 0 20px;
+  }
+  .hero {
+    height: 300px;
+  }
 }
