@@ -199,43 +199,53 @@ button:hover {
   font-weight: 400;
 }
 
-.projeto1 {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.projeto2 {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
+.project-estruturas {
+  max-width: 260px;
+  text-align: left;
+  line-height: 1.4;
+  margin: 0 20px;
 }
 
 .our-projects {
   padding: 40px 0;
   display: flex;
   justify-content: center;
+  gap: 40px; 
 }
 
-.our-services h4 {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.3;
-  margin: 10px auto;
-  text-align: center;
-}
-
-.projects p {
+.projects {
   max-width: 260px;
   text-align: left;
   line-height: 1.4;
-  margin: 9;
+}
+
+.project-estruturas {
+  max-width: 260px;
+  text-align: left;
+  line-height: 1.4;
+  margin: 90px 20px 0 20px;
+}
+
+.project-estruturas p {
+  max-width: 260px;
+  text-align: left;
+  line-height: 1.4;
+  margin: 9px 0;
+}
+
+.projeto1,
+.projeto2 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .our-projects h2 {
   color:#213A5C;
   font-size: 30px;
+  justify-content: left;
   font-family: josefin-sans;
 }
 
@@ -350,7 +360,6 @@ button:hover {
 .menu-hamburguer {
   display: flex;
 }
-
 
 .navbar {
   position: absolute;
