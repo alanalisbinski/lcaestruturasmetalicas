@@ -410,8 +410,12 @@ button:hover {
   .our-services {
     padding: 0 20px;
   }
-  
+
   .hero {
     height: 300px;
   }
+}
+
+.skills:nth-child(1) {
+  margin-top: 8px; 
 }
