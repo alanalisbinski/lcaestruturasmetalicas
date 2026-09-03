@@ -101,6 +101,14 @@ header {
   padding: 15px 10px;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%
+}
+
+.skills button {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .circle {
@@ -143,6 +151,7 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
+
 button:hover {
   background-color: #1a2e4a;
   border-color: #1a2e4a;
@@ -391,12 +400,17 @@ button:hover {
   }
 
   .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
 
   .skills {
+    margin-top: auto;
+    align-self: flex-start;
     width: 100%;
     max-width: 300px;
   }
